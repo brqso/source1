@@ -1,0 +1,122 @@
+{
+    "name": "برق ميوزك",
+    "description": "Telegram Music Bot from Team brq allows you to stream music trought the telegram voice chat feature.",
+   "logo": "https://telegra.ph/file/7c8fc17112d22814da2e9.jpg",
+    "keywords": ["telegram music bot", "voice chat", "pytgcalls"],
+    "repository": "https://github.com/brqso/source1",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": " قم بوضع كود بايروجرام هنا",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "قم بوضع ايدي مطور البوت هنا",
+            "required": true,
+            "value": "2056407064"
+        },
+        "ASSID": {
+            "description": "قم بوضع ايدي الحساب المساعد هنا",
+            "required": true,
+            "value": ""
+        },
+        "ASSNAME": {
+            "description": "قم بوضع اسم الحساب المساعد",
+            "required": true,
+            "value": ""
+        },
+        "ASSUSERNAME": {
+            "description": "قم بوضع معرف الحساب المساعد بدون @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "قم بوضع ايدي بوتك هنا ",
+            "required": true,
+            "value": "5354404806"
+        },
+        "BOT_USERNAME": {
+            "description": "قم بوضع معرف بوتك بدون @",
+            "required": true,
+            "value": ""
+        },
+        "BOT_NAME": {
+            "description": "قم بوضع اسم بوتك هنا",
+            "required": true,
+            "value": ""
+        },
+        "SUPPORT": {
+            "description": "قم بوضع معرف جروب الدعم هنا",
+            "required": false,
+            "value": "brqsource"
+        },
+        "UPDATE": {
+            "description": "قم بوضع معرف قناة التحديثات بدون@",
+            "required": false,
+            "value": "ektesa7"
+        },
+        "HEROKU_API_KEY": {
+            "description": "ثم بوضع هيروكو ايبي كي الخاص بك من هنا 'https://dashboard.heroku.com/account'",
+            "required": true,
+            "value": ""
+        },
+        "HEROKU_APP_NAME": {
+            "description": "أضف اسم تطبيق Heroku هنا. كما شغل في الأعلى. يساعد في إعادة تشغيل الروبوت.",
+            "required": true,
+            "value": ""
+        },
+        "UPSTREAM_REPO": {
+            "description": "لا تغير شيء هنا /skip",
+            "value": "https://github.com/brqso/source1",
+            "required": true
+        },
+        "UPSTREAM_BRANCH": {
+            "description": "اسم فرع الريبو ، إذا كنت لا تعرف ، فانتقل إلى / skip",
+            "value": "master",
+            "required": true
+        },
+        "START_IMG": {
+            "description": "صوره البوت التي تظهر عند ارسال /start",
+            "required": true,
+            "value": ""
+        },
+        "API_ID": {
+            "description": "الايبي ايدي الخاص بك from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "الايبي هاش الخاص بك from my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطور",
+            "required": true,
+            "value": "5091307330"
+        },
+        "DURATION_LIMIT": {
+            "description": "شغل ، لا تغير هذا !",
+            "required": true,
+            "value": "180"
+        },
+        "BOT_TOKEN": {
+            "description": "توكن بوتك من بوت فاذر",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "المانجو الخاص بك",
+            "required": true,
+            "value": ""
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
